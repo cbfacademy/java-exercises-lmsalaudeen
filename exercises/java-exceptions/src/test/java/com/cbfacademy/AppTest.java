@@ -3,6 +3,7 @@ package com.cbfacademy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class AppTest {
     public void createsAnApp() {
         final App app = new App();
 
-        final List<String> strings = List.of("App.java", "App.txt", null, "App.md");
+        final List<String> strings = Arrays.asList("App.java", "App.txt", null, "App.md");
 
         assertThat(app, is(notNullValue()));
     }

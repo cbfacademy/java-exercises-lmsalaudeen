@@ -26,6 +26,7 @@ public class App
             try {
                 value = fileExtension.check(fileName);
             } catch (NullFilenameException e) {
+                // rather than have value be -1; errorCode() returns -1 anyway
                 value = e.errorCode();
             }
             fileMap.put(fileName, value);
